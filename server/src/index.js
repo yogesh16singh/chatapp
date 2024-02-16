@@ -8,7 +8,7 @@ dotenv.config({
 
 const startserver = async () => {
   await connectDB();
-  httpServer.listen(process.env.PORT || 8000, () => {
+  httpServer.listen(process.env.PORT || 8080, () => {
     console.log("server started");
   });
 };
